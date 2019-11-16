@@ -21,8 +21,8 @@ jar {
     baseName = 'spring-statemachine-sample'
     version = '0.0.1-SNAPSHOT'
 }
-sourceCompatibility = 1.10
-targetCompatibility = 1.10
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
 
 repositories {
     mavenCentral()
@@ -42,6 +42,8 @@ dependencies {
     runtime('org.springframework.data:spring-data-rest-hal-browser')
     runtime("com.h2database:h2")
     runtime('org.springframework.boot:spring-boot-starter-logging')
+    compile('javax.xml.bind:jaxb-api:2.3.1')
+	compile('org.javassist:javassist:3.25.0-GA')
 
     asciidoctor 'org.springframework.restdocs:spring-restdocs-asciidoctor'
     testCompile 'org.springframework.restdocs:spring-restdocs-restassured'
@@ -57,6 +59,7 @@ dependencies {
         compileOnly("org.projectlombok:lombok:$lombokVersion")
         testCompileOnly("org.projectlombok:lombok:$lombokVersion")
     }
+    testCompile 'org.javassist:javassist:3.25.0-GA'
 }
 
 compileJava.options.encoding = 'UTF-8'
