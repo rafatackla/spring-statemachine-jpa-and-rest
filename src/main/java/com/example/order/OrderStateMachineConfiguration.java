@@ -16,6 +16,9 @@ import org.springframework.statemachine.listener.StateMachineListener;
 import org.springframework.statemachine.listener.StateMachineListenerAdapter;
 import org.springframework.statemachine.state.State;
 
+import com.example.order.enums.OrderEvent;
+import com.example.order.enums.OrderState;
+
 import lombok.extern.slf4j.Slf4j;
 
 @Configuration

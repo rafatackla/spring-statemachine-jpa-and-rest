@@ -1,4 +1,4 @@
-package com.example.order;
+package com.example.order.domain;
 
 import javax.persistence.Access;
 import javax.persistence.AccessType;
@@ -12,6 +12,8 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 import org.springframework.statemachine.StateMachineContext;
 
 import com.example.ContextEntity;
+import com.example.order.enums.OrderEvent;
+import com.example.order.enums.OrderState;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AccessLevel;

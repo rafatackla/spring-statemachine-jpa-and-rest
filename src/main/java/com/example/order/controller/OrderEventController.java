@@ -1,4 +1,4 @@
-package com.example.order;
+package com.example.order.controller;
 
 import java.io.Serializable;
 
@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.example.ContextEntity;
 import com.example.DefaultStateMachineAdapter;
+import com.example.order.domain.Order;
+import com.example.order.enums.OrderEvent;
+import com.example.order.enums.OrderState;
 
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;

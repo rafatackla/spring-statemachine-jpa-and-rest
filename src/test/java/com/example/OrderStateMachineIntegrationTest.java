@@ -18,10 +18,10 @@ import org.springframework.statemachine.persist.StateMachinePersister;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.example.order.Order;
-import com.example.order.OrderEvent;
-import com.example.order.OrderRepository;
-import com.example.order.OrderState;
+import com.example.order.domain.Order;
+import com.example.order.enums.OrderEvent;
+import com.example.order.enums.OrderState;
+import com.example.order.repository.OrderRepository;
 
 import lombok.SneakyThrows;
 

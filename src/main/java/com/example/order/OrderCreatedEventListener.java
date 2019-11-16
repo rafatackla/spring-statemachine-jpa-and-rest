@@ -7,6 +7,9 @@ import org.springframework.stereotype.Component;
 
 import com.example.ContextEntity;
 import com.example.DefaultStateMachineAdapter;
+import com.example.order.domain.Order;
+import com.example.order.enums.OrderEvent;
+import com.example.order.enums.OrderState;
 
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
