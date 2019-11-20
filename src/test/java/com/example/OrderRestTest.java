@@ -34,6 +34,8 @@ import org.springframework.restdocs.operation.preprocess.OperationRequestPreproc
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.example.OrderApplication;
+
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;

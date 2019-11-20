@@ -9,6 +9,6 @@ import com.example.order.enums.OrderState;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
-    Page<Order> findByCurrentState(OrderState currentState, Pageable pageable);
+//    Page<Order> findByCurrentState(OrderState currentState, Pageable pageable);
 
 }

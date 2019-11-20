@@ -18,11 +18,12 @@ import lombok.SneakyThrows;
 @RequiredArgsConstructor
 public class OrderCreatedEventListener extends AbstractRepositoryEventListener<Order> {
 
-    final DefaultStateMachineAdapter<OrderState, OrderEvent, ContextEntity<OrderState, OrderEvent, ? extends Serializable>> orderStateMachineAdapter;
+    final DefaultStateMachineAdapter<OrderState, OrderEvent, Order> orderStateMachineAdapter;
 
     @Override
     @SneakyThrows
     protected void onBeforeCreate(Order order) {
+    	order.setNome("nome de criação");
         orderStateMachineAdapter.persist(orderStateMachineAdapter.create(), order);
     }
 
