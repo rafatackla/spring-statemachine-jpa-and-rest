@@ -1,11 +1,8 @@
 package com.example.order;
 
-import java.io.Serializable;
-
 import org.springframework.data.rest.core.event.AbstractRepositoryEventListener;
 import org.springframework.stereotype.Component;
 
-import com.example.ContextEntity;
 import com.example.DefaultStateMachineAdapter;
 import com.example.order.domain.Order;
 import com.example.order.enums.OrderEvent;

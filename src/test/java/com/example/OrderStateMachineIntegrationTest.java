@@ -2,8 +2,6 @@ package com.example;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.io.Serializable;
-
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
@@ -11,14 +9,12 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.config.StateMachineFactory;
 import org.springframework.statemachine.persist.StateMachinePersister;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.example.ContextEntity;
 import com.example.order.domain.Order;
 import com.example.order.enums.OrderEvent;
 import com.example.order.enums.OrderState;
